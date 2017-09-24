@@ -1,4 +1,4 @@
-﻿@model VNT.Web.UI.Control.ControlConfiguration.Grid
+﻿@*@model Web.Mvc.UI.Control.ControlModels.Grid
 @(Html
     .Kendo()
     .Grid<dynamic>()
@@ -10,4 +10,5 @@
     .DataSource(dataSource => dataSource
         .WebApi()
         .Read(action => action
-            .Url(Model.WebApiUrl))))
+            .Url(Model.WebApiUrl))))*@
+@(Html.Kendo().Button().Name("aaa"))

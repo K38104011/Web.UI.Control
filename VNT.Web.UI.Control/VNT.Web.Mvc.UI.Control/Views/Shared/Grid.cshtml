@@ -1,0 +1,13 @@
+﻿@model VNT.Web.Mvc.UI.Control.Models.Grid
+@(Html
+      .Kendo()
+      .Grid<dynamic>()
+      .HtmlAttributes(new Dictionary<string, object>()
+      {
+          { "class", "table" }
+      })
+      .Name("grid")
+      .DataSource(dataSource => dataSource
+          .WebApi()
+          .Read(action => action
+              .Url(Model.WebApiUrl))))

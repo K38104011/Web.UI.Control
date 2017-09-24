@@ -1,8 +1,11 @@
-﻿@{
+﻿@using VNT.Web.Mvc.UI.Control.Models
+@{
     ViewBag.Title = "Home Page";
 }
-
-@(Html.Kendo().Button().Name("a").Content("Button").HtmlAttributes(new Dictionary<string, object>()
-  {
-      { "class" , "button is-primary" }
-  }))
+@{
+    var model = new Grid
+    {
+        WebApiUrl = Url.Content(@"~/api/Data/GetCustomers")
+    };
+}
+@Html.Partial("Grid", model)

@@ -871,6 +871,12 @@
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VNT.Web.Mvc.UI.Control\VNT.Web.Mvc.UI.Control.csproj">
+      <Project>{edb60028-47dc-464e-88f9-9bd07896e519}</Project>
+      <Name>VNT.Web.Mvc.UI.Control</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

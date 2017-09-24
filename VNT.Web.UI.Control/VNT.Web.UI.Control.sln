@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VNT.Web.UI.Control", "VNT.Web.UI.Control\VNT.Web.UI.Control.csproj", "{D60E0D93-E4C8-43F1-A345-8A5688962398}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VNT.Web.Mvc.UI.Control", "VNT.Web.Mvc.UI.Control\VNT.Web.Mvc.UI.Control.csproj", "{EDB60028-47DC-464E-88F9-9BD07896E519}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D60E0D93-E4C8-43F1-A345-8A5688962398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D60E0D93-E4C8-43F1-A345-8A5688962398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D60E0D93-E4C8-43F1-A345-8A5688962398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB60028-47DC-464E-88F9-9BD07896E519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB60028-47DC-464E-88F9-9BD07896E519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB60028-47DC-464E-88F9-9BD07896E519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB60028-47DC-464E-88F9-9BD07896E519}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
