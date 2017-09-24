@@ -1,0 +1,14 @@
+﻿@using VNT.Web.UI.Control.Models
+@model VNT.Web.UI.Control.ControlConfiguration.Grid
+@(Html
+    .Kendo()
+    .Grid<Customer>()
+    .HtmlAttributes(new Dictionary<string, object>()
+    {
+        { "class", "table" }
+    })
+    .Name("grid")
+    .DataSource(dataSource => dataSource
+        .WebApi()
+        .Read(action => action
+            .Url(Model.WebApiUrl))))
