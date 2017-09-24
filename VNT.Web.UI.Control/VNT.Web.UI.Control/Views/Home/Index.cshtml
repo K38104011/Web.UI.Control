@@ -3,9 +3,11 @@
     ViewBag.Title = "Home Page";
 }
 @{
-    var model = new Grid
+    var container = new Container();
+    var grid = new Grid
     {
         WebApiUrl = Url.Content(@"~/api/Data/GetCustomers")
     };
+    container.Add(grid);
+    Html.RenderContainer(container);
 }
-@Html.Partial("Grid", model)
